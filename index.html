@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furious Four</title>
+    <link rel="stylesheet" href="public/css/input.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="text-white body-font bg-blue-950">
+        <div class="container mx-auto flex flex-wrap p-6 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl text-red-600">Furious Four</span>
+            </a>
+            <nav class="md:ml-auto  flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 cursor-pointer hover:text-red-600">Home</a>
+                <a class="mr-5 cursor-pointer hover:text-red-600">About</a>
+                <a class="mr-5 cursor-pointer hover:text-red-600">Contact</a>
+                <a class="mr-5 cursor-pointer hover:text-red-600">Others</a>
+            </nav>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+
+    <!-- HEADING  -->
+    <div class="container px-5 py-10 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <p class="leading-relaxed text-2xl text-red-600">
+                INSCRIPTIONS INFORMATION EXTRACTION USING OCR TECHNIQUE
+            </p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-lg">Furious Four</h2>
+            <p class="text-gray-500">From DSCE</p>
+        </div>
+    </div>
+    <!-- END HEADING  -->
+
+
+    <!-- IMAGE -->
+    <div class="container px-5 py-1 mx-auto my-auto flex items-center sm:flex-row flex-col">
+        <div class="px-5 py-3 items-center h-auto max-w-full mx-auto my-auto">
+
+            <!-- <img class="h-auto max-w-sm shadow-lg dark:shadow-black/30"
+                src="https://source.unsplash.com/500x600/?nature" alt="uploded image" />
+
+            <div class="container px-5 py-5 mx-auto">
+                <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                    <input type="file" id="img_input" accept="image/jpg, image/jpeg, img/png">
+                </div>
+            </div> -->
+            <img id="output" width="100%" height="100%" />
+        </div>
+    </div>
+    <div class="container px-5 py-1 mx-auto my-auto flex items-center sm:flex-row flex-col">
+        <div class="px-5 py-3 items-center h-auto max-w-full mx-auto my-auto">
+            <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)"
+                style="display: none;">
+            <label for="file" class="cursor-pointer border-spacing-2 border">
+                Upload Image
+            </label>
+        </div>
+    </div>
+    <script src="/html_js/img_upload_js.js"></script>
+
+    
+    <!-- END IMAGE-->
+
+
+    <!-- DISPLAY ORIGINAL AND TRANSLATION -->
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <div class="flex flex-wrap container">
+            <div class="w-full md:w-1/2 p-4 ">
+                <p class="text-center text-xl text-red-600">Text from the inscription/image uploaded</p> <br>
+                <p class="text-lg text-gray-800 leading-relaxed">ಕನ್ನಡ ಅಕ್ಷರಮಾಲೆಯು ಬ್ರಾಹ್ಮಿ ಲಿಪಿಯಿಂದ ಬೆಳೆದು ಬಂದಿದೆ.
+                    ಇದನ್ನು ಸ್ವರಗಳು, ಅನುಸ್ವಾರ, ವಿಸರ್ಗ, ವ್ಯಂಜನಗಳು, ಅವರ್ಗೀಯ ವ್ಯಂಜನಗಳೆಂದು ವಿಭಾಗಿಸಲಾಗಿದೆ. ಕನ್ನಡ
+                    ಅಕ್ಷರಮಾಲೆಯನ್ನು ಕನ್ನಡ ವರ್ಣಮಾಲೆಯೆಂದು ಕರೆಯಲಾಗುತ್ತದೆ. ನಾವು ಮಾತನಾಡುವ ಮಾತುಗಳೆಲ್ಲ ವಾಕ್ಯ ವಾಕ್ಯಗಳಾಗಿರುತ್ತವೆ.
+                    ವಾಕ್ಯಗಳು ಪದಗಳಿಂದ ಕೂಡಿರುತ್ತವೆ. ಪದಗಳು ಅಕ್ಷರಗಳಿಂದ ಕೂಡಿರುತ್ತವೆ. ಉದಾಹರಣೆಗೆ, ನಾನು ಶಾಲೆಗೆ ಹೋಗಿ ಬರುವೆನು. ಈ
+                    ವಾಕ್ಯದಲ್ಲಿ ನಾನು, ಶಾಲೆಗೆ, ಹೋಗಿ, ಬರುವೆನು, ಹೀಗೆ ನಾಲ್ಕು ಪದಗಳಿವೆ. ಒಂದೊಂದು ಪದದಲ್ಲೂ ಹಲವು ಅಕ್ಷರಗಳಿವೆ. </p>
+            </div>
+            <div class="w-full md:w-1/2 p-4">
+                <p class="text-center text-xl text-red-600 ">Transalation of it into English</p> <br>
+                <p class="text-lg text-gray-800 leading-relaxed mb-6">The Kannada alphabet evolved from the Brahmi
+                    script. It is divided into swaras, anusvara, visarga, consonants, avargi consonants. Kannada
+                    alphabet is known as Kannada Alphabet. All the words we speak are sentences. Sentences are made up
+                    of words. Words are made up of letters. For example, I go to school. There are four words in this
+                    sentence: I, to school, to go, to come. Each word has many letters.</p>
+            </div>
+        </div>
+    </div>
+    <!-- END DISPLAY ORIGINAL AND TRANSLATION -->
+
+    <!-- THANK YOU -->
+    <div class="container px-5 py-5 mx-auto bg-blue-900">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <p class="leading-relaxed text-2xl text-red-600">
+                Hope this was Helpful
+            </p>
+        </div>
+    </div>
+    <!-- THANK YOU -->
+    <!-- FOOTER -->
+    <footer class="bg-blue-950 text-gray-600 body-font ">
+        <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-red-600 text-xl">Furious Four</span>
+            </a>
+            <p class="text-sm text-white sm:ml-6 sm:mt-0 mt-4">© 2023 Furious Four —
+                <a href="" rel="noopener noreferrer" class="text-white ml-1" target="_blank">@Furious-four</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-white">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-white">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-white">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-white">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+
+    </footer>
+    <!-- END FOOTER -->
+
+</body>
+
+</html>
