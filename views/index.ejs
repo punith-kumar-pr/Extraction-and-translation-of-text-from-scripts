@@ -36,16 +36,22 @@
                          -->
                     <form action="/" method="POST" enctype="multipart/form-data">
                         <input type="file" name="image" />
-                        <input type="submit" value="Upload" />
+                        <input type="submit" id="upload_btn" value="Upload" />
                     </form>
+
+                    <div>
+                        <label for="upload_btn" class="text-green-500">UPLOAD</label>
+                    </div>
 
                     <div class="container px-5 py-1 mx-auto my-auto flex items-center sm:flex-row flex-col">
                         <div class="px-5 py-3 items-center h-auto max-w-full mx-auto my-auto">
-                            <a href="translate?id=<%=imgurl%>" class="text-red-600 border">
+                            <a href="translate?id=<%=imgurl%>" class="text-red-600 border text-7xl">
                                 Click to Know What it is
                             </a>
                         </div>
                     </div>
+                    <h1>Upload an image to extract text</h1>
+                  
 
                 </div>
             </div>
@@ -98,3 +104,14 @@
 
             <%- include('includes/footer.ejs') %>
                 <%- include('includes/end.ejs') %>
+                <!-- result.ejs -->
+<html>
+    <head>
+      <title>Text Extracted from Image</title>
+    </head>
+    <body>
+      <h1>Text Extracted from Image:</h1>
+      
+    </body>
+  </html>
+  

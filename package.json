@@ -24,7 +24,10 @@
     "ejs": "^3.1.9",
     "express": "^4.16.3",
     "express-mongoose": "^0.1.0",
+    "express-session": "^1.17.3",
     "mongoose": "^7.1.0",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "node-tesseract-ocr": "^2.2.1",
+    "tesseract.js": "^4.0.5"
   }
 }
