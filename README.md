@@ -17,7 +17,7 @@
 ![webpage 1.](/screenshots/website-1.png "website screenshot")
 ![webpage 2.](/screenshots/website-2.png "website screenshot")
 ### Android
-![android 1.](/screenshots/android-1.png "android screenshot")
+![android 1.](/screenshots/android-1.jpg "android screenshot")
 
 ## Links
 github link for [andriod](https://www.github.com/Shashankappu/lipi).
