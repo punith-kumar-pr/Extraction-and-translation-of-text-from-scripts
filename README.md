@@ -13,12 +13,20 @@
 
 ## Images
 
-![alt text](screenshots/website-1.png)
-
-![webpage 1.](/screenshots/website 1.png "website screenshot")
-![webpage 2.](/screenshots/website 2.png "website screenshot")
-![android 1.](/screenshots/android 1.png "android screenshot")
+### Website
+![webpage 1.](/nmit-hackathon-web/screenshots/website-1.png "website screenshot")
+![webpage 2.](/nmit-hackathon-web/screenshots/website-2.png "website screenshot")
+### Android
+![android 1.](/nmit-hackathon-web/screenshots/android-1.png "android screenshot")
 
 ## Links
-
 github link for [andriod](https://www.github.com/Shashankappu/lipi).
+
+## Team
+ 
+| Team        | Contribution|
+| ----------- |:------------|
+| Ananya      | AIML        |
+| Manish      | AIML        |
+| Punith      | Website     |
+| Shashank    | Android     |
