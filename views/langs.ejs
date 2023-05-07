@@ -1,0 +1,37 @@
+<%- include('includes/head.ejs') %>
+  </head>
+
+  <body>
+    <%- include('includes/navbar.ejs') %>
+      <!-- HEADING  -->
+      <div class="container px-5 py-10 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+          <p class="leading-relaxed text-2xl text-red-600">
+            INSCRIPTIONS INFORMATION EXTRACTION USING OCR TECHNIQUE
+          </p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+          <h2 class="text-gray-900 font-medium title-font tracking-wider text-lg">Furious Four</h2>
+          <p class="text-gray-500">From DSCE</p>
+        </div>
+      </div>
+      <!-- END HEADING  -->
+
+
+      <div class="container px-5 py-5 mx-auto space-y-5">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+          <h1 class="text-blue-700 text-3xl my-5">Choose the Language You Upload</h1>
+          <ul class="list-none space-y-8 hover:list-disc my-5 ">
+            <% for (let i=0; i < languages.length; i++) { %>
+              <li class="text-red-500">
+                <a class="text-red-600 my-11 space-y-8 text-xl border-red-500 border-4 py-2 px-4 rounded-full hover:bg-red-500 hover:text-white"
+                  href="/langs/<%= languages[i].code %>">
+                  <%= languages[i].name %>
+                </a>
+              </li>
+              <% } %>
+          </ul>
+        </div>
+      </div>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <%- include('includes/footer.ejs') %>
+        <%- include('includes/end.ejs') %>
