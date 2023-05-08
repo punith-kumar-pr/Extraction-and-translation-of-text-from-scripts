@@ -1,32 +1,33 @@
 # Extraction of information from Scripts using OCR
 
-## This is the project made at NMIT hacks 2023
+### This is application which extractes the text from the images and can translate it in different languages
+---
+
+## Steps in application
 
 
-### Tech Stack
-
-* AIML
-* Node.js
-* Android
-* Tensor flow
+* Choose a language of the photo you upload. If language is not known choose "Auto detect".
+* Click on select file and upload the file.
+* Click on "Extract it" extract the text.
+* Can choose the language for translation of the extracted text.
 
 
-## Images
+## Tech Stack
 
-### Website
+* Node.js / Express.js
+* Tailwind css
+* EJS
+* MongoDB
+* Python
+* Tesseract (OCR)
+
+
+## Screenshots
+
+
+
 ![webpage 1.](/screenshots/website-1.png "website screenshot")
 ![webpage 2.](/screenshots/website-2.png "website screenshot")
-### Android
-![android 1.](/screenshots/android-1.jpg "android screenshot")
 
-## Links
-github link for [andriod](https://www.github.com/Shashankappu/lipi).
-
-## Team
- 
-| Team        | Contribution|
-| ----------- |:------------|
-| Ananya      | AIML        |
-| Manish      | AIML        |
-| Punith      | Website     |
-| Shashank    | Android     |
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
