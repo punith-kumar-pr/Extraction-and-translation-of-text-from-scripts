@@ -30,7 +30,7 @@ This web application is designed to extract text from images/scripts in various 
 
 1. **Prerequisites**: Make sure you have Node.js and MongoDB installed on your machine.
 
-2. **Clone the Repository**: Clone this repository to your local machine using `git clone https://github.com/yourusername/web-app-multilingual-translation.git`.
+2. **Clone the Repository**: Clone this repository to your local machine using `git clone https://github.com/punith-kumar-pr/Extraction-and-translation-of-text-from-scripts.git`.
 
 3. **Install Dependencies**: Navigate to the project directory and run `npm install` to install the necessary dependencies.
 
@@ -38,9 +38,11 @@ This web application is designed to extract text from images/scripts in various 
 
 5. **API Keys**: Obtain API keys from the translation service provider (e.g., Google Cloud Translate, Microsoft Azure Translation, etc.) and update the configuration files.
 
-6. **Run the Application**: Execute `npm start` to start the Node.js server.
+6. **Run Translator server**: Here I used a python server to translate the text, run the python file which is inside the python route folder `python app.py`
 
-7. **Access the Application**: Open a web browser and navigate to `http://localhost:3000` to access the application.
+8. **Run the Application**: Execute `npm start` to start the Node.js server.
+
+9. **Access the Application**: Open a web browser and navigate to `http://localhost:3000` to access the application.
 
 ## Contributions
 
@@ -52,4 +54,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Feel free to reach out to the project maintainers via email at `contact@example.com` for any inquiries or support related to the application. We hope you find this application useful and versatile for your text extraction and translation needs!
+Feel free to reach out to the project maintainers via email at `punithkumarpr03@gmail.com` or `punikumar2002@gmail.com` for any inquiries or support related to the application. We hope you find this application useful and versatile for your text extraction and translation needs!
