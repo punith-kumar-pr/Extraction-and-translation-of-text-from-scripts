@@ -1,9 +1,23 @@
-# Multilingual Text Extraction and Translation Web Application
+# Extraction and translation of text from scripts
 
 This web application is designed to extract text from images/scripts in various languages and provide translations into multiple target languages. It utilizes the Node.js runtime environment along with Express.js for server-side handling, MongoDB for data storage, EJS for dynamic HTML rendering, and Tesseract for optical character recognition (OCR) to extract text from images/scripts.
 
 ---
+<!-- Add a description of your project -->
 
+![Screenshot 1](screenshots/website-1.png)
+<!-- Add any relevant captions or descriptions for the screenshot -->
+
+![Screenshot 2](screenshots/website-2.png)
+<!-- Add any relevant captions or descriptions for the screenshot -->
+
+<!-- Add more screenshots as needed -->
+
+## Getting Started
+
+<!-- Rest of your README content -->
+
+---
 ## Features
 
 - **Text Extraction**: The application uses Tesseract, an OCR engine, to extract text from images and scripts provided by the user.
