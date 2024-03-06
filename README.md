@@ -16,7 +16,7 @@ Lipi is a Application where a user can upload the photos of a various scripts of
 - Node.js
 - Express.js
 - MongoDB
-- 'ejs' templating engine(for dynamic data transfer)
+- 'ejs' templating engine (for dynamically rendering pages)
 - Tessaract (for OCR - Optical Charecter Recognition)
 - Google Translator (for transalting languages)
 ## Setup Instructions
